@@ -66,4 +66,9 @@ public class StockService {
         repository.deleteById(dto.getId());
         return dto;
     }
+
+    @Transactional(readOnly = true)
+    public List<StockDTO> findByToday() {
+        return repository.findByToday().map(mapper::toDto).orElseThrow(NotFoundException::new);
+    }
 }
