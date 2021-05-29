@@ -5,9 +5,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/santander-dev-week
-    username: postgres
-    password: docker
+    url: postgres://tizvrumnrzarcp:7cf21d0c1992fe922be21400dd816f2a6e06d9ed0103e1d49cb0c7dcbea773ed@ec2-52-0-114-209.compute-1.amazonaws.com:5432/d84h2o1ckthoff
+    username: tizvrumnrzarcp
+    password: 7cf21d0c1992fe922be21400dd816f2a6e06d9ed0103e1d49cb0c7dcbea773ed
   jpa:
     show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
